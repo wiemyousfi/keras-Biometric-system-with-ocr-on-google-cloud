@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Verif+</title>
+
+    <style> 
+        html, body {
+          min-height: 100%;
+          }
+        
+    
+          html, body {
+          min-height: 100%;
+          }
+          body, div, form, input, select, p { 
+          padding: 0;
+          margin: 0;
+          outline: none;
+          font-family: Roboto, Arial, sans-serif;
+          font-size: 16px;
+          color: white;
+          box-sizing: border-box;
+          }
+          body {
+          
+          background-size: cover;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("{{ url_for('static', filename='banking.jpg') }}");
+          }
+
+
+
+        
+
+
+
+
+          .menu_bar{
+            
+            text-align:right;
+          }
+          .menu_bar ul{
+              display: inline-flex;
+              list-style:none;
+          }
+          
+          .menu_bar li{
+              width:100px;
+              margin:20px;
+             
+              padding-left:15px;
+          }
+          .menu_bar ul li a{
+              text-decoration:none;
+              color:white;
+          }
+          .active, .menu_bar ul li :hover
+          {
+            text-decoration : underline;}
+           .menu_bar .fa{
+               margin-right: 15px;
+           }
+          .titre{
+              text-align:center;
+              margin-left: 8px;
+          }
+          .row{
+              display: flex;
+              height:60%;
+              align-items: center;
+              padding-left: 150px;
+              
+
+              
+          }
+          .col{
+            margin-left:5px;
+            flex-basis:50%;
+            padding:50px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius:30px;
+          }
+         
+          .col2{
+            margin-left:5px;
+            flex-basis:20%;
+            padding:50px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius:30px;
+          }
+          .logo{
+            position: absolute;
+        left:15px;
+        top:15px;
+        width:10;
+        height:10;
+          }
+          h3{
+            color:#85d6de !important;
+          }
+        </style>
+
+</head>
+<body>
+     <div class="menu_bar">
+       
+      <ul>
+          <li class="active"><a href="#"><i  class="fas fa-home" style="color:#85d6de";></i>Accueil</a></li>
+          <li><a href="/choisir"><i class="fa fa-concierge-bell" style="color:#85d6de";></i>Vérif+</a></li>
+          <li><a href="/contact"><i class="fa fa-phone" style="color:#85d6de";></i>Contact</a></li>
+    </ul>
+    
+    </div>
+      <!--div class="logo" >
+      <i class="fas fa-gavel fa-2x"></i>
+    </div-->
+      <div class="titre"> 
+        <br>
+       
+        <h1 style="color: skyblue;">Verif+</h1>
+        
+    </div>
+  
+      <div class="col">
+     <p>
+     <h1><center><b>Scanner , Vérifier , Valider !</b></center></h1>
+    </p>
+    </div>
+    </div>
+    </div>
+    <center>
+        <br>
+       <h1 style="color: skyblue;"> Nos valeurs</h1>
+    </center>
+<center>
+    <div class="row">
+        
+      <div class="col2">
+     <p>
+     <h3><center>AUTHENTICITÉ</center></h3>
+        Notre client est notre priorité, on essaye toujours de protéger ces données.
+    </p>
+    </div>
+
+    <div class="col2">
+     <p>
+     <h3><center> DIGITAL</center></h3>
+    
+        En un clic vous pouvez accèder à notre plateforme et découvrir nos services. 
+    </p>
+    </div>
+
+    <div class="col2">
+     <p>
+     <h3><center> RAPIDITE</center></h3>
+    
+        Au bout de quelque seconde on vérifie votre chèque et vos informations .
+    </p>
+    </div>
+
+
+    <div class="col2">
+     <p>
+     <h3><center>PROTECTION</center></h3>
+        Grâce à notre application, vos chèques sont protéger contre tout type de fraude.  
+    </div>
+
+    
+   
+
+   
+</div>
+</center>
+  </body>
+
+</html>    

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <title>authentification</title>
+      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style> 
+        
+     .menu_bar {
+            
+            text-align:right;
+          }
+        .alert { text-align:center;
+        color:#00bcd4;}  
+         .menu_bar ul{
+              display: inline-flex;
+              list-style:none;
+          }
+        .menu_bar li{
+              width:100px;
+              margin:20px;
+             
+              padding-left:15px;
+          }
+         .menu_bar ul li a{
+              text-decoration:none;
+              color:white;
+          }
+          .active, .menu_bar ul li :hover
+          {
+            text-decoration : underline;}
+           .menu_bar .fa{
+               margin-right: 15px;
+           }
+      html, body {
+      min-height: 100%;
+      }
+     body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: white;
+      box-sizing: border-box;
+      }
+      body {
+      
+      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url({{ url_for('static', filename='banking.jpg') }});
+
+      font-family:  Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      
+      }
+      center h1{
+        font-family:  Roboto;
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      }
+      .icons{
+        
+          padding:20px;
+          margin: 0 auto;
+          
+           } 
+      
+    .ic{
+        margin-left: auto;
+         margin-right: auto;
+         display: block; 
+        float:left;
+        min-width:100 px;
+        height:50px;
+        width:50px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-radius:50%;
+        background:black;
+        font-size:22px;
+
+    }
+      .contact{
+          position:relative;
+          min-height:100vh;
+          padding:5px;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          flex-direction: column;
+          margin-top:5px;
+      }
+      .container{
+          width:100%;
+          display:flex;
+          justify-content: center;
+          align-items:center;
+          margin-top:30px;
+          padding:30px;
+          margin-left:5px;
+      }
+      .container .contactInfo{
+          width:50%;
+          display:flex;
+          flex-direction:column;
+      }
+      .container .contactInfo .box{
+          position:relative;
+          padding:20px 0;
+          display:flex;}
+
+      .container .contactInfo .box .icon{
+          min-width: 100 px;
+          height: 50px;
+          width:50px;
+          margin-right: 8px;
+          background:black;
+          display:flex;
+          justify-content: center;
+          align-items:center;
+          border-radius:50%;
+          font-size:22px;
+          
+      }
+      .container .contactInfo .box .text h3 
+      {font-weight:500;
+    color: #00bcd4;}
+    .contactForm{
+        width:40%;
+        padding:40px;
+        background:rgba(0, 0, 0, 0.6);
+        border-radius:30px;
+    }
+    .contactForm h2{
+        font-size:30px;
+        font-weight:500;}
+    .contactForm .inputbox{
+        position:relative;
+        width:100%;
+        margin-top:10px;
+    } 
+    .contactForm .inputbox input,.contactForm .inputbox textarea{
+        background:rgba(0, 0, 0, 0.6);
+        width:100%;
+        padding:5px 0;
+        font-size: 16px;
+        margin: 20px 0;
+        border:none;
+        border-bottom: 2px solid #333;
+        outline:none;
+        resize:none;
+    }
+    .contactForm .inputbox span{
+        position:absolute;
+        left:0;
+        padding:16px;
+        margin:10px 0;
+        pointer-events:none;
+        transition:0.5s;
+        color:#666;
+    }
+    .contactForm .inputbox input:focus ~ span,.contactForm .inputbox textarea:focus ~ span
+    {
+        color: #e91e63;
+        font-size:12px;
+        transform:translateY(-20px);
+    }
+    .contactForm .inputbox input[type="submit"]{
+        width:100%;
+        background: #00bcd4;
+        color:#fff;
+        border:none;
+        cursor:pointer;
+    }
+    center i{
+        min-width:50px;
+        height:40px;
+        width:50px;
+        justify-content:center;
+        align-items:center;
+        border-radius:50px;
+        background:black;
+        font-size:25px;
+        padding:auto;
+        padding-top:15px;
+        margin:auto;
+
+    }
+        textarea {
+  color: #fff;
+    }
+     </style>
+  </head>
+  
+  <body>
+      <div class="menu_bar">
+       
+      <ul>
+          <li ><a href="/"><i  class="fas fa-home" style="color:#85d6de";></i>Accueil</a></li>
+          <li><a href="/choisir"><i class="fa fa-concierge-bell" style="color:#85d6de";></i>Vérif+</a></li>
+          <li class="active"><a href="/contact"><i class="fa fa-phone" style="color:#85d6de";></i>Contact</a></li>
+    </ul>
+    
+    </div>
+      <center><h1>Suivez Vérif+ sur les réseaux sociaux !</h1>
+      
+            
+              
+      <a href ="https://www.linkedin.com/in/ilef-info-services-54652220b"><i class="fab fa-linkedin"></i></a>
+       <a href ="https://www.linkedin.com/in/ilef-info-services-54652220b"><i class="fab fa-twitter-square"></i></a>
+      <a href ="https://www.facebook.com/ilefinfoservices/"><i class="fab fa-facebook-square"></i></a>
+         
+      
+     
+</center>
+      {% with messages = get_flashed_messages() %}
+ 
+                {% if messages %}
+ 
+                {% for message in messages %}
+ 
+                <div class="alert " role="alert">
+ 
+                    
+ 
+ 
+                {{message}}
+ 
+ 
+                </div>
+ 
+ 
+                {% endfor %}
+ 
+                {% endif %}
+                {% endwith %}
+ 
+     
+<section class="contact">
+      <div class="container">
+          <div class="contactInfo">
+              <div class="box">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="text">
+                  <h3>Adresse</h3>
+                  <p>votre adresse</p>
+              </div>
+              </div>
+              <div class="box">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <div class="text">
+                  <h3>Tél</h3>
+                  <p> votre num</p>
+              </div>
+              </div>
+              <div class="box">
+              <div class="icon"><i class="fas fa-envelope-open-text"></i></div>
+              <div class="text">
+                  <h3>Email</h3>
+                  <p>ilef.infoservice@gmail.com</p>
+              </div>
+              </div>
+    </div>
+    <div class="contactForm">
+        <form action ="/send_message" method="POST">
+            <h2> Envoyer un message</h2>
+            <div class="inputbox">
+                <input type="text" name="nom" required="required"  placeholder="Nom complet">
+                
+            </div> 
+            <div class="inputbox">
+                <input type="text" name="mail" required="required" placeholder="mail">
+                
+            </div> 
+            <div class="inputbox">
+                <textarea name="msg" placeholder="Tapez votre message"></textarea>
+                
+            </div> 
+            <div class="inputbox">
+                <input type="submit" name="" value="Envoyer" >
+    </div>
+    </form>    
+    </section>
+  </body>
+
+</html>    

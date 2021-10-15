@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} </title>
+    
+    <style> 
+        html, body {
+          min-height: 100%;
+          }
+        
+    
+          html, body {
+          min-height: 100%;
+          }
+          body, div, form, input, select, p { 
+          padding: 0;
+          margin: 0;
+          outline: none;
+          font-family: Roboto, Arial, sans-serif;
+          font-size: 16px;
+          color: black;
+          box-sizing: border-box;
+          }
+          body {
+          
+          background-size: cover;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url({{ url_for('static', filename='banking.jpg') }});
+          }
+        .row h2 {color: white; }
+          .menu_bar{
+            
+            text-align:right;
+          }
+        .modal-body form{ 
+            
+        
+        }
+          .menu_bar ul{
+              display: inline-flex;
+              list-style:none;
+          }
+     
+          
+          .menu_bar li{
+              width:100px;
+              margin:20px;
+             
+              padding-left:15px;
+          }
+          .menu_bar ul li a{
+              text-decoration:none;
+              color:white;
+          }
+          .active, .menu_bar ul li :hover
+          {
+            text-decoration : underline;}
+           .menu_bar .fa{
+               margin-right: 15px;
+           }
+          .titre{
+              text-align:center;
+              margin-left: 8px;
+          }
+          .row{
+              display: flex;
+              height:60%;
+              align-items: center;
+              padding-left: 150px;
+              
+
+              
+          }
+          .col{
+            margin-left:5px;
+            flex-basis:50%;
+            padding:50px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius:30px;
+          }
+         
+          .col2{
+            margin-left:5px;
+            flex-basis:20%;
+            padding:50px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius:30px;
+          }
+          .logo{
+            position: absolute;
+        left:15px;
+        top:15px;
+        width:10;
+        height:10;
+          }
+          h3{
+            color:#85d6de !important;
+          }
+        </style>
+</head>
+<body>
+
+{% block body %} {% endblock %}
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
